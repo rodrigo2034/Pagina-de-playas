@@ -1,0 +1,175 @@
+body {
+    font-family: "Arial";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body header {
+    background-image: url("img/tropical-beach-1350-blur.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    position: relative;
+}
+
+.cuerpo-header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Menu Header */
+.cuerpo-header nav {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cuerpo-header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.cuerpo-header nav li:first-child,
+.cuerpo-header nav li + li {
+    margin-right: 3rem;
+}
+.cuerpo-header nav a {
+    font-size: 1.4rem;
+    color: #fff;
+}
+.cuerpo-header nav span {
+    display: inline-block;
+    writing-mode: vertical-lr;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.boton-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Seccion Header */
+.seccion-header {
+    background-color: #02b4f2;
+    width: calc(100% - 500px);
+    height: 100vh;
+    display: block;
+}
+
+/* Seccion-Img-Playa */
+.seccion-img-playa {
+    background-image: url("img/tropical-beach-1350.jpg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    width: 100%;
+    height: 450px;
+    background-color: #fff;
+    margin-left: 6.5rem;
+    margin-top: 6rem;
+    border-radius: 12px;
+    box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, .2);
+    position: relative;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0, 0, 0, .1);
+    animation: animar-fondo 10s ease-in 1 normal both;
+}
+/* Animacion De Fondo */
+@keyframes animar-fondo {
+    from {
+        background-position: 0 center;
+    }
+    to {
+        background-position: 42% center;
+    }
+}
+
+
+.seccion-img-playa .titulos-seccion {
+    position: absolute;
+    top: 5rem;
+    right: -13rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.seccion-img-playa .titulos-seccion h1 {
+    font-size: 7em;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+.seccion-img-playa .titulos-seccion .tarjeta {
+    display: block;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    width: 470px;
+    background-color: rgba(48, 97, 255, .7);
+    padding: 1rem 2rem;
+}
+.seccion-img-playa .titulos-seccion .tarjeta span {
+    display: inline-block;
+    padding-right: 3rem;
+    border-right: 3px solid #fff;
+}
+.redes-sociales {
+    list-style: none;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+.redes-sociales li +li {
+    margin-top: 1rem;
+}
+/* Efectos Animacion Hover Redes Sociales */
+.redes-sociales a {
+    display: inline-block;
+}
+.redes-sociales a:hover {
+    transform: scale(1.2);
+}
+
+.efecto-opacidad {
+    opacity: 0;
+    animation: animar-opacidad 1s ease-in-out .5s 1 normal both;
+}
+.efecto-opacidad.retrazo-1 {
+    animation-delay: 1s;
+}
+.efecto-opacidad.retrazo-2 {
+    animation-delay: 1.5s;
+}
+@keyframes animar-opacidad {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
